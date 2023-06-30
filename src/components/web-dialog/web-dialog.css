@@ -1,0 +1,65 @@
+:host {
+  display: none;
+}
+
+:host([show]) {
+  display: block;
+}
+
+:host(.is-mask) {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.dialog {
+  border: 1px solid #cdcdcd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+  margin: 7% auto 0;
+  font-size: 14px;
+  color: #303133;
+  position: relative;
+}
+
+.dialog-header {
+  border-bottom: 1px solid #cdcdcd;
+  padding: 12px;
+  font-size: 16px;
+}
+.dialog-body {
+  bottom: 1px solid #cdcdcd;
+  padding: 16px 12px;
+}
+.dialog-footer {
+  border-top: 1px solid #cdcdcd;
+  padding: 12px;
+  text-align: right;
+}
+
+.dialog-close {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1em;
+  font-family: cursive;
+  font-size: 16px;
+  color: #999999;
+}
+
+.dialog-close:hover {
+  color: #333333;
+}

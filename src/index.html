@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <title>Stencil Component Starter</title>
+
+  <script type="module" src="/build/test.esm.js"></script>
+  <script nomodule src="/build/test.js"></script>
+</head>
+
+<body>
+  <button id="btn1">通过设置 标签属性 打开 Dialog</button>
+  <button id="btn2">通过 web-dialog 暴露的 open 方法打开 Dialog</button>
+  <web-dialog show header="Dialog 标题">
+    <p>这是 Dialog 的 body 部分</p>
+    <p>这是 Dialog 的 body 部分</p>
+    <p>这是 Dialog 的 body 部分</p>
+    <p>这是 Dialog 的 body 部分</p>
+    <p>这是 Dialog 的 body 部分</p>
+    <p>这是 Dialog 的 body 部分</p>
+    <p>这是 Dialog 的 body 部分</p>
+  </web-dialog>
+</body>
+<script>
+  document.querySelector('#btn1').addEventListener('click', () => {
+    document.querySelector('web-dialog').show = true;
+  });
+  document.querySelector('#btn2').addEventListener('click', () => {
+    document.querySelector('web-dialog').open();
+  });
+</script>
+
+</html>
